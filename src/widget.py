@@ -22,6 +22,8 @@ print(masc_account_card("check 35383033474447895560"))
 
 
 
-
-
+def get_date(get_str: str) -> str:
+    """"""
+    date_slise = date_str[0:10].split("_")
+    return ".".join(date_slise[::-1])
 
