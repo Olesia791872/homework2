@@ -18,4 +18,10 @@ def masc_account_card(type_and_number: str) -> str:
         return f"{text_result} {get_mask_card_number(digit_result)}"
 
 
+print(masc_account_card("check 35383033474447895560"))
+
+
+
+
+
 
