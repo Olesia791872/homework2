@@ -1,8 +1,8 @@
-from src.masks import get_mask_account, get_mask_card_number
+from masks import get_mask_account, get_mask_card_number
 
 
 def masc_account_card(type_and_number: str) -> str:
-    """"""
+    """Account/card masking function"""
     text_result = " "
     digit_result = " "
     digit_count = 0
@@ -21,9 +21,7 @@ def masc_account_card(type_and_number: str) -> str:
 print(masc_account_card("check 35383033474447895560"))
 
 
-
 def get_date(get_str: str) -> str:
-    """"""
-    date_slise = date_str[0:10].split("_")
+    """The function takes a string and returns a date in the format DD.MM.YYYY"""
+    date_slise = get_str[0:10].split("_")
     return ".".join(date_slise[::-1])
-
